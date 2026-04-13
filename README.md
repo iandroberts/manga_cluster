@@ -112,11 +112,3 @@ A constraint enforces `min_cluster_size ≤ min_samples`.
 
 - `preprocessed_spectra/` — one FITS file per galaxy with columns `wav`, `flux1`–`flux6`
 - `plots/umap.pdf` — 2D UMAP projection colored by cluster label; noise points shown in gray
-
----
-
-## Notes
-
-- The absolute magnitude feature (`nsa_elpetro_absmag` r-band) is present in the code but commented out. It can be re-enabled in `create_feature_vectors()` and the corresponding `feat` array size adjusted.
-- The `min_dist` and `n_components` UMAP parameters are also present as commented-out optimization dimensions and can be included in the search space if desired.
-- Marvin must be configured with valid SAS credentials for remote access. See the [Marvin documentation](https://sdss-marvin.readthedocs.io/en/stable/installation.html) for setup.
